@@ -14,7 +14,7 @@ import com.gargoylesoftware.htmlunit.javascript.host.Iterator;
 
 public class Tatoc {
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Vibhushrivastav\\eclipse-workspace\\training\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\SanchitJain\\eclipse-workspace\\training\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://10.0.1.86/tatoc");
 
@@ -63,7 +63,7 @@ public class Tatoc {
 			driver.switchTo().window(popWindow);
 		}
 		WebElement text = driver.findElement(By.id("name"));
-		text.sendKeys("Vibhu");
+		text.sendKeys("Sanchit");
 		driver.findElement(By.id("submit")).click();
 		driver.switchTo().window(MainWindow);
 		driver.findElement(By.linkText("Proceed")).click();	
